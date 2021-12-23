@@ -1,0 +1,16 @@
+import random
+s = input()
+def rand_seq(q):
+  seq = ''.join(random.choices(q, k=random.randint(10, 1000)))
+  return seq
+
+DNA = ['A', 'T', 'G', 'C']
+RNA = ['A', 'U', 'G', 'C']
+ak = ['A', 'R', 'N', 'D', 'C', 'Q', 'E', 'G', 'H', 'I', 'L', 'K', 'M', 'F', 'P', 'S', 'T', 'W', 'Y', 'V']
+
+if s == 'DNA':
+  print(rand_seq(DNA))
+elif s == 'RNA':
+  print(rand_seq(RNA))
+elif s == 'ak':
+  print(rand_seq(ak))
